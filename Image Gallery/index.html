@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImageGallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>IMAGE GALLERY</h1>
+    <p>Curated calm in every frame.</p>
+  </header>
+
+  <div class="image-grid">
+    <div class="image-item" onclick="openLightbox(0)">
+      <img src="img1.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(1)">
+      <img src="img2.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(2)">
+      <img src="img3.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(3)">
+      <img src="img4.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(4)">
+      <img src="img5.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(5)">
+      <img src="img6.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(6)">
+      <img src="img7.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(7)">
+      <img src="img8.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(8)">
+      <img src="img9.jpeg">
+    </div>
+    <div class="image-item" onclick="openLightbox(9)">
+      <img src="img10.jpeg">
+    </div>
+  </div>
+
+ <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
+      <img id="lightbox-img" src="" alt="">
+      <span class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</span>
+      <div class="lightbox-counter">
+        <span id="current-image">1</span> / <span id="total-images">10</span>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+
+</body>
+</html>
